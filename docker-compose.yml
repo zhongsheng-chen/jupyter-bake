@@ -29,7 +29,7 @@ services:
       # All containers will join this network
       DOCKER_NETWORK_NAME: jupyterhub-network
       # JupyterHub will spawn this Notebook image for users
-      DOCKER_NOTEBOOK_IMAGE: zhongsheng/base-notebook:python-3.10 #zhongsheng/base-notebook:python-3.10 | quay.io/jupyter/base-notebook:latest | jupyter/base-notebook:python-3.10
+      DOCKER_NOTEBOOK_IMAGE: zhongshengchen/jupyter-custom-image:ubuntu24.04-py3.10
       # Notebook directory inside user image
       DOCKER_NOTEBOOK_DIR: /home/jovyan/work
       # Timezone, default by Asia/Shanghai
